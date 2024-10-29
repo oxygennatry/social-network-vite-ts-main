@@ -12,11 +12,12 @@ export const ForgotStyle = styled.div`
 h1{
     text-align: center;
     color: black;
+    margin-top: 20px;
 }
 
 .passwordcard{
+    padding: 30px;
     width: 492px;
-    height: 383px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -36,9 +37,10 @@ background-color: ${(props) => props.theme.colors.bgc};
 border-radius: 10px;
 border:1px solid transparent;
 transition: 200ms;
-border: 2px solid ${(props) => props.theme.colors.gray};
+border: 2px solid ${(props) => props.theme.colors.lightgray};
 width: 412px;
 }
+
 
 .bgcPassword{
     background-color:${(props) => props.theme.colors.lightgray} ;
@@ -50,6 +52,12 @@ width: 412px;
 
 .forgotbtn{
     width: 412px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.forgotbtn:hover{
+    text-decoration: none;
 }
 
 `

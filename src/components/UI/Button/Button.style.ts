@@ -16,6 +16,7 @@ export const SButton = styled.button<StyledButtonProps>`
 
   &:disabled {
     background-color: ${props=> props.theme.colors.disabledbgc};
+    text-decoration: none;
   }
 
   ${(props)=>
@@ -23,11 +24,13 @@ export const SButton = styled.button<StyledButtonProps>`
   ? css`
   background-color:${props=> props.theme.colors.primecolor};
   color: white;
+  text-decoration: none;
     `
     
   : css `
   background-color: ${props=> props.theme.colors.lightgray};
     color: ${props=> props.theme.colors.placeholdercolor};
+    text-decoration: none;
   `}
 
   &.primary {
@@ -42,17 +45,21 @@ export const SButton = styled.button<StyledButtonProps>`
   &:disabled:hover {
     cursor: default;
     opacity: 0.5;
+    text-decoration: none;
   }
 
   &:hover {
     translate: 0 -5px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+    font-style:none;
+    text-decoration: none;
   }
 
   &:active {
     transition: 100ms;
     translate: 0 0;
     box-shadow: none;
+    text-decoration: none;
   }
 
 

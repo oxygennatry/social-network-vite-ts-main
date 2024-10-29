@@ -1,10 +1,11 @@
 import { StyledRegistrationInfo } from "./Registration.styled"
+import { Link } from "react-router-dom"
 
 export const Registration = ()=>{
     return(
         <StyledRegistrationInfo>
         <span>
-          У вас нет аккаунта? <a href="#">Зарегистрироваться</a>
+          У вас нет аккаунта? <Link to="/registration-page">Зарегестрироваться</Link>
         </span>
         <p>Войти с помощью</p>
         <div className="icons-wrapper">

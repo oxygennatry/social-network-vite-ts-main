@@ -1,8 +1,10 @@
+import { Registration } from "./components/UI/RegistrationInfo/RegistrationInfo";
 import { LoginPage } from "./pages/LoginPage/LoginPage";
 import { MainPage } from "./pages/MainPage/MainPage";
 import { Password } from "./pages/Password/Password";
 import { ProfilePage } from "./pages/ProfilePage/ProfilePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RegistrationPage } from "./pages/RegistrationPage/RegistrationPage";
 
 function App() {
 
@@ -22,6 +24,10 @@ function App() {
     {
       path:"/profile-page",
       element:<ProfilePage/>
+    },
+    {
+      path:"/registration-page",
+      element:<RegistrationPage/>
     },
   ])
   return (
